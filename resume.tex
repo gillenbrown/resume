@@ -1,0 +1,101 @@
+\documentclass[10pt]{article}
+\parindent 0pt
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled=1]{helvet}
+\usepackage[helvet]{sfmath}
+\everymath={\sf}
+\usepackage{nopageno}
+\usepackage{amsmath,amstext,color}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\fancyhead[C]{Gillen Brown --- Resume}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\pagestyle{fancy}
+
+\newcommand{\header}[1]{\vspace{2em}\par \textbf{\large #1}\strut\hrule\vspace{0em}}
+%par makes it always go to the next line, strut produces slight vertical offset
+% for the rule.
+
+\newcommand{\actionHeader}[2]{\textbf{#1 \hfill #2}}
+\newcommand{\indentedItemDate}[2]{\newline\null\qquad #1 \hfill #2}
+\newcommand{\indentedItem}[1]{\newline\null\qquad #1}
+% null lets the indents work after the space. Newlines allows me to have less
+% whitespace in the Latex file.
+
+\title{Gillen Brown}
+
+\begin{document}
+\thispagestyle{empty}
+
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\begin{center}
+{\huge \bf Gillen Brown}
+
+{\Large gillenbrown@gmail.com \enspace \rule[-5pt]{1pt}{20pt} \enspace \href{http://www.github.com/gillenbrown}{github.com/gillenbrown}}
+
+\bigskip
+
+\parbox[c][2em][s]{0.8\textwidth}{\center \large Future Ph.D graduate with extensive technical and analytic skills, seeking position in data science or computer science.}
+
+\bigskip
+
+\end{center}
+
+\header{Education}
+\actionHeader{University of Michigan}{Ann Arbor, MI}
+\indentedItemDate{Ph.D. in Astronomy}{September 2016-{\it May 2022}}
+\indentedItem{{\bf Topic:} Chemical Evolution of Simulated Milky Way Sized Galaxies}
+\indentedItem{{\bf Summary:} Added funtionality to existing C codebase that models galaxy formation, then ran }
+\indentedItem{simulations on supercomputers such as NASA's Pleiades cluster to understand how different elements}
+\indentedItem{are distributed within galaxies.}
+
+\actionHeader{University of Missouri-Kansas City}{Kansas City, MO}
+\indentedItemDate{B.S. Physics with emphasis in Astronomy}{May 2016}
+\indentedItem{Math minor}
+\indentedItem{Computer Science minor}
+\indentedItem{4.0 GPA}
+
+\header{Awards}
+\begin{itemize}
+    \item Michigan Basketball Data Madness Challenge --- Winner
+\end{itemize}
+
+\header{Soft Skills}
+\begin{itemize}
+    \item {\bf Technical/Scientific Writing} | Currently an author on two scientific articles, with more upcoming.
+    \item {\bf Teaching} | Facilitated astronomy labs, designed and taught my own course, and will soon obtain a {\it Graduate Teaching Certificate} from the UM Center of Research on Learning and Teaching. 
+    \item {\bf Collaboration} | Worked with several faculty and fellow graduate students on my thesis project.
+    \item {\bf Public Speaking} | Presented my scientific work at conferences and other formal venues and more casual settings such as Ann Arbor Nerd Nite and Astronomy on Tap.
+    \item {\bf Leadership} | Took leadership role among UM-Astronomy graduate students, including representing graduate students in several departmental settings.
+    \item {\bf Critical Thinking} | Developed the ability to evaluate claims from myself and others in both qualitative and quantitative ways, including familiarity with statistical analyses
+    \item {\bf Project Management} | Developed and executed thesis project spanning multiple years. 
+    \item {\bf Problem Solving} | Discovered solutions to complex problems on the bleeding edge of scientific research on all levels of a project, from fixing technical glitches to developing creative experiments
+\end{itemize}
+
+\header{Technical Skills}
+\actionHeader{Some Experience}{}
+\vspace{-0.6em}
+\begin{itemize}
+    \item R
+    \item HTML/CSS
+    \item Job Schedulers (Slurm, Torque)
+\end{itemize}
+
+\actionHeader{Extensive Experience}{}
+\vspace{-0.6em}
+\begin{itemize}
+    \item Python (and associated scientific computing packages such as NumPy, SciPy, Matplotlib, Jupyter)
+    \item C/C++
+    \item Unix
+    \item LaTeX
+    \item Version Control Software (git, Mercurial)
+\end{itemize}
+
+\end{document}
