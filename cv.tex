@@ -1,16 +1,19 @@
 \documentclass[10pt]{article}
-\parindent 0pt
+\parindent0pt
 
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage[scaled=1]{helvet}
-\usepackage[helvet]{sfmath}
-\everymath={\sf}
+\usepackage{mathpazo}
 \usepackage{nopageno}
 \usepackage{amsmath,amstext,color}
 \usepackage[margin=1.0in]{geometry}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{fancyhdr}
+\usepackage{etaremune}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+} 
 
 \fancyhead[C]{Gillen Brown --- CV}
 \renewcommand{\headrulewidth}{0pt}
@@ -22,6 +25,10 @@
 % for the rule.
 
 \newcommand{\actionHeader}[2]{\textbf{#1 \hfill #2}}
+\newcommand{\justifiedItemDate}[2]{\newline\null#1 \hfill #2}
+\newcommand{\justifiedItem}[1]{\newline\null#1}
+\newcommand{\justifiedItemDateFirst}[2]{#1 \hfill #2}
+\newcommand{\justifiedItemFirst}[1]{#1}
 \newcommand{\indentedItemDate}[2]{\newline\null\qquad #1 \hfill #2}
 \newcommand{\indentedItem}[1]{\newline\null\qquad #1}
 % null lets the indents work after the space. Newlines allows me to have less
@@ -37,7 +44,7 @@
 \begin{center}
 {\huge \bf Gillen Brown}
 
-{\Large gillenb@umich.edu}
+Department of Astronomy, University of Michigan ---  \href{mailto:gillenb@umich.edu}{gillenb@umich.edu} 
 \end{center}
 \bigskip
 
@@ -54,9 +61,9 @@
 % \newline
 % Ann Arbor, MI 48109
 
-% \header{Education}
+\header{Education}
 \actionHeader{University of Michigan}{Ann Arbor, MI}
-\indentedItemDate{Ph.D. in Astronomy}{September 2016-{\it May 2022}}
+\indentedItemDate{Ph.D. in Astronomy}{September 2016 --- {\it May 2022\/}}
 \indentedItem{Advisor: Oleg Y. Gnedin} 
 \indentedItem{Topic: Chemical Evolution of Simulated Milky Way Sized Galaxies}
 
@@ -65,12 +72,13 @@
 \indentedItem{Math and Computer Science minors}
 
 \header{Publications}
-\begin{itemize}
+\begin{etaremune}
+    \item \textbf{Brown, G.}, Gnedin, O. Y.,  ``Improving performance of zoom-in cosmological simulations using initial conditions with customized grids'', 2021, New Astronomy, 84, 101501
     \item \textbf{Brown, G.}, Gnedin, O. Y.,  ``Nuclear Star Clusters in Cosmological Simulations'', 2018, ApJ, 864, 94
-    \item Gonzalez, A., Gettings, D., Brodwin, M., et al. including \textbf{Brown, G.}, ``The Massive and Distant Clusters of WISE Survey. I: Survey Overview and a Catalog of $>$2000 Galaxy Clusters at z$\simeq$1'', 2019, ApJS, 240, 33
-\end{itemize}
+    \item Gonzalez, A., Gettings, D., Brodwin, M., et al.\ including \textbf{Brown, G.}, ``The Massive and Distant Clusters of WISE Survey. I:\@ Survey Overview and a Catalog of $>$2000 Galaxy Clusters at z$\simeq$1'', 2019, ApJS, 240, 33
+\end{etaremune}
 
-\header{Academic Presentations}
+\header{Presentations}
 \begin{itemize}
     \item Santa Cruz Galaxy Workshop, August 2019, poster: ``Star Cluster Formation in Cosmological Simulations''
     \item University of Michigan Graduate Student Lunch Talks, December 2019, talk: ``Galactic Chemical Evolution in Cosmological Simulations''
@@ -83,16 +91,24 @@
     % \item Undergraduate Research Day at the Capitol, March 2015, poster: ``An Easy and Accurate Method for Measuring Distance to Galaxy Clusters''
 \end{itemize}
 
-\header{Teaching}
 
-\actionHeader{Graduate Student GSI Mentor}{Fall 2019}
-\indentedItem{Consultant and teaching mentor to other graduate student instructors in the department}
+\header{Teaching} 
+\justifiedItemDateFirst{Graduate Student GSI Mentor}{Fall 2019 --- Present}
+\justifiedItemDate{GSI, Astro 201 --- Introduction to Astrophysics}{Winter 2021}
+\justifiedItemDate{Sole Instuctor, Astro 127 --- Naked Eye Astronomy}{Spring 2019}
+\justifiedItemDate{GSI, Astro 102 --- Introductory Astronomy: Stars, Galaxies, and the Universe}{Winter 2019}
+\justifiedItemDate{GSI, Astro 107 --- The Dark Side of the Universe}{Winter 2019}
+\justifiedItemDate{GSI, Astro 101 --- Introductory Astronomy: The Solar System and Search for Life}{Winter \& Fall 2017}
 
-\actionHeader{Sole Instuctor for Astro 127: Naked Eye Astronomy}{Spring 2019}
-\indentedItem{Taught the course and developed all materials, including lectures, homework, and exams}
 
-\actionHeader{Graduate Student Instructor}{2017, 2019}
-\indentedItem{Led discussion sections and graded work for introductory astronomy classes for non-science majors}
+% \actionHeader{Graduate Student GSI Mentor}{Fall 2019 --- Present}
+% \indentedItem{Consultant and teaching mentor to other graduate student instructors in the department}
+
+% \actionHeader{Sole Instuctor for Astro 127: Naked Eye Astronomy}{Spring 2019}
+% \indentedItem{Taught the course and developed all materials, including lectures, homework, and exams}
+
+% \actionHeader{Graduate Student Instructor}{2017, 2019}
+% \indentedItem{Led discussion sections and graded work for introductory astronomy classes for non-science majors}
 
 % \actionHeader{Supplemental Instruction (SI) Mentor}{Fall 2015 --- Spring 2016}
 % \indentedItem{Assisted other SI leaders in developing and executing group study sessions}
@@ -105,42 +121,23 @@
 % \actionHeader{Teaching Assistant}{Fall 2014 --- Spring 2015}
 % \indentedItem{Assisted in class and graded labs for introductory astronomy lab for non-science majors}
 
-\pagebreak
-
-\header{Outreach}
-
-\actionHeader{University of Michigan Museum of Natural History Science Communication Fellow}{2019}
-\indentedItem{Several professional development workshops on effectively engaging the public}
-\indentedItem{Created a hands-on demo and shared it at several Museum events}
-
-\actionHeader{Public Talks}{}
-\indentedItem{University of Michigan Museum of Natural History, 5 times in 2019, ``Building the Universe''}
-\indentedItem{Astronomy on Tap - Ann Arbor, October 2019, ``Origin of the Elements''}
-\indentedItem{Ann Arbor Hands-On Museum, July 2019, ``How the Moon Formed''}
-\indentedItem{Ellis Library \& Reference Center, July 2019, ``The Scientific Legacy of the Moon Landings''}
-\indentedItem{Nerd Nite Ann Arbor, March 2019, ``Origin of the Elements''}
-\indentedItem{Ignite Ann Arbor, November 2018, ``Reclaiming the Night Sky''}
-
-\actionHeader{Astronomy on Tap - Ann Arbor}{Fall 2019 --- present}
-\indentedItem{Member of leadership team, coordinated speakers and themes for monthly events}
-% \actionHeader{Vice President of UMKC Society of Physics Students}{2014 --- 2016}
-% \indentedItem{Engaged in many science outreach activities and physics demonstrations to local groups}
-% \indentedItem{Organized partnerships with local under-served school districts to enrich science education}
 
 \header{Activities}
+\justifiedItemDateFirst{UM Astronomy Antiracism Reading Group --- Leadership Team}{2020 --- present}
+\justifiedItemDate{UM Astronomy Galaxy Group Organizer}{2019 --- present}
+\justifiedItemDate{UM Astronomy Prospective Student Weekend Organizer}{2020}
+\justifiedItemDate{UM Astronomy Prelim Review Committee --- Graduate Student Representative}{2019 --- 2020}
+\justifiedItemDate{UM Astronomy Curriculum Committee --- Graduate Student Representative}{2018 --- 2019}
+\justifiedItemDate{UM Astronomy Graduate Student Colloquium Lunch Organizer}{2018 --- 2019}
 
-\actionHeader{UM Astronomy Galaxy Group Organizer}{2019 --- present}
-\indentedItem{Coordinated and organized speakers for biweekly Galaxy Group meetings}
+% \actionHeader{UM Astronomy Galaxy Group Organizer}{2019 --- present}
+% \indentedItem{Coordinated and organized speakers for biweekly Galaxy Group meetings}
 
-\actionHeader{Michigan Dark Skies Group Member}{2017 --- present}
-\indentedItem{Met with an Ann Arbor City Council committee to encourge action to reduce light pollution}
-\indentedItem{Met with real estate developers and architects to encourage dark sky friendly lighting}
+% \actionHeader{UM Astronomy Curriculum Committee --- Graduate Student Representative}{2018 --- 2019}
+% \indentedItem{Helped manage the undergraduate and graduate astronomy curriculum}
 
-\actionHeader{UM Astronomy Curriculum Committee --- Graduate Student Representative}{2018 --- 2019}
-\indentedItem{Helped manage the undergraduate and graduate astronomy curriculum}
-
-\actionHeader{Graduate Student Colloquium Lunch Organizer}{2018 --- 2019}
-\indentedItem{Organized and ordered food for the weekly graduate student lunches with the colloquium speaker}
+% \actionHeader{Graduate Student Colloquium Lunch Organizer}{2018 --- 2019}
+% \indentedItem{Organized and ordered food for the weekly graduate student lunches with the colloquium speaker}
 
 % \actionHeader{UMKC Galaxy Evolution Group Member}{2014 --- 2016}
 % \indentedItem{Developed a series of Python tutorials for new group members}
@@ -155,7 +152,38 @@
 % \actionHeader{Undergraduate Research Day at the Capitol}{2015}
 % \indentedItem{Presented my research to representatives and aides at the Missouri State Capitol}
 
+\pagebreak
 
+\header{Outreach}
+\justifiedItemDateFirst{Astronomy on Tap: Ann Arbor --- Leadership Team}{Fall 2019 --- present}
+\justifiedItemDate{Michigan Dark Skies Group Member}{2017 --- present}
+\justifiedItemDate{University of Michigan Museum of Natural History Science Communication Fellow}{2019}
+
+{\actionHeader{Public Talks}{}}
+\justifiedItemDate{University of Michigan Museum of Natural History, ``Building the Universe''}{9 times in 2019 --- 2020}
+\justifiedItemDate{Astronomy on Tap: Ann Arbor, ``Origin of the Elements''}{October 2019}
+\justifiedItemDate{Ann Arbor Hands-On Museum, ``How the Moon Formed''}{July 2019}
+\justifiedItemDate{Ellis Library \& Reference Center, ``The Scientific Legacy of the Moon Landings''}{July 2019}
+\justifiedItemDate{Nerd Nite Ann Arbor, ``Origin of the Elements''}{March 2019}
+\justifiedItemDate{Ignite Ann Arbor, ``Reclaiming the Night Sky''}{November 2018}
+
+% \actionHeader{University of Michigan Museum of Natural History Science Communication Fellow}{2019}
+% \indentedItem{Several professional development workshops on effectively engaging the public}
+% \indentedItem{Created a hands-on demo and shared it at several Museum events}
+
+% \actionHeader{Astronomy on Tap - Ann Arbor}{Fall 2019 --- present}
+% \indentedItem{Member of leadership team, coordinated speakers and themes for monthly events}
+
+% \actionHeader{Michigan Dark Skies Group Member}{2017 --- present}
+% \indentedItem{Met with an Ann Arbor City Council committee to encourge action to reduce light pollution}
+% \indentedItem{Met with real estate developers and architects to encourage dark sky friendly lighting}
+
+% \actionHeader{Vice President of UMKC Society of Physics Students}{2014 --- 2016}
+% \indentedItem{Engaged in many science outreach activities and physics demonstrations to local groups}
+% \indentedItem{Organized partnerships with local under-served school districts to enrich science education}
+
+\header{Computing Time Allocations Awarded}
+\justifiedItemDateFirst{Co-I (Oleg Gnedin): XSEDE Stampede2 --- 7.44 million CPU-hours}{2020}
 
 \end{document}
 
