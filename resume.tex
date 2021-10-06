@@ -1,10 +1,8 @@
 \documentclass[10pt]{article}
 \parindent 0pt
 
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage[scaled=1]{helvet}
-\usepackage[helvet]{sfmath}
-\everymath={\sf}
+\usepackage{mathpazo}
+\usepackage{etaremune}
 \usepackage{nopageno}
 \usepackage{amsmath,amstext,color}
 \usepackage[margin=1.0in]{geometry}
@@ -18,7 +16,7 @@
 \fancyfoot{}
 \pagestyle{fancy}
 
-\newcommand{\header}[1]{\vspace{2em}\par \textbf{\large #1}\strut\hrule\vspace{0em}}
+\newcommand{\header}[1]{\vspace{1.5em}\par \textbf{\large #1}\strut\hrule\vspace{0em}}
 %par makes it always go to the next line, strut produces slight vertical offset
 % for the rule.
 
@@ -44,7 +42,7 @@
 
 \parbox[c][2em][s]{0.8\textwidth}{\center \large Future Ph.D graduate with extensive technical and analytic skills, seeking position in data science or computer science.}
 
-\bigskip
+\medskip
 
 \end{center}
 
@@ -62,14 +60,21 @@
 \indentedItem{Computer Science minor}
 \indentedItem{4.0 GPA}
 
-\header{Awards}
+\header{Technical Skills}
+\actionHeader{Extensive Experience}{}
+\vspace{-0.6em}
 \begin{itemize}
-    \item Michigan Basketball Data Madness Challenge --- Winner
+    \item Python (and associated scientific computing packages such as NumPy, SciPy, Matplotlib, Jupyter)
+    \item C/C++
+    \item Unix
+    \item LaTeX
 \end{itemize}
+
+{\bf Some Experience} | R, HTML, CSS, git, Job Schedulers (Slurm, Torque)
 
 \header{Soft Skills}
 \begin{itemize}
-    \item {\bf Technical/Scientific Writing} | Currently an author on two scientific articles, with more upcoming.
+    \item {\bf Technical/Scientific Writing} | Currently an author on three scientific articles, with more upcoming.
     \item {\bf Teaching} | Facilitated astronomy labs, designed and taught my own course, and will soon obtain a {\it Graduate Teaching Certificate} from the UM Center of Research on Learning and Teaching. 
     \item {\bf Collaboration} | Worked with several faculty and fellow graduate students on my thesis project.
     \item {\bf Public Speaking} | Presented my scientific work at conferences and other formal venues and more casual settings such as Ann Arbor Nerd Nite and Astronomy on Tap.
@@ -79,23 +84,9 @@
     \item {\bf Problem Solving} | Discovered solutions to complex problems on the bleeding edge of scientific research on all levels of a project, from fixing technical glitches to developing creative experiments
 \end{itemize}
 
-\header{Technical Skills}
-\actionHeader{Some Experience}{}
-\vspace{-0.6em}
+\header{Awards}
 \begin{itemize}
-    \item R
-    \item HTML/CSS
-    \item Job Schedulers (Slurm, Torque)
-\end{itemize}
-
-\actionHeader{Extensive Experience}{}
-\vspace{-0.6em}
-\begin{itemize}
-    \item Python (and associated scientific computing packages such as NumPy, SciPy, Matplotlib, Jupyter)
-    \item C/C++
-    \item Unix
-    \item LaTeX
-    \item Version Control Software (git, Mercurial)
+    \item {\bf Michigan Basketball Data Madness Challenge} --- Won a UM competition by extracting actionable insights from basketball player performance data.
 \end{itemize}
 
 \end{document}
