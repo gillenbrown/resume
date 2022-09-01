@@ -5,24 +5,32 @@
 \usepackage{etaremune}
 \usepackage{nopageno}
 \usepackage{amsmath,amstext,color}
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{fancyhdr}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \fancyhead[C]{Gillen Brown --- Resume}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot{}
 \pagestyle{fancy}
 
-\newcommand{\header}[1]{\vspace{1.5em}\par \textbf{\large #1}\strut\hrule\vspace{0em}}
+\newcommand{\todo}[1]{\textcolor{red}{[\bf #1]}}
+
+% command for spacer in contact info
+% \newcommand{\spacer}{\enspace \rule[-4pt]{1pt}{15pt} \enspace}
+\newcommand{\spacer}{$\bullet$ \ }
+
+\newcommand{\header}[1]{\vspace{1.0em}\par \textbf{\large #1}\strut\hrule\vspace{-0.9em}}
 %par makes it always go to the next line, strut produces slight vertical offset
 % for the rule.
 
-\newcommand{\actionHeader}[2]{\textbf{#1 \hfill #2}}
+\newcommand{\actionHeader}[2]{\vspace{0.6em}\textbf{#1} \hfill #2}
+\newcommand{\actionHeaderSecondLine}[2]{\newline \textit{#1} \hfill #2}
 \newcommand{\indentedItemDate}[2]{\newline\null\qquad #1 \hfill #2}
 \newcommand{\indentedItem}[1]{\newline\null\qquad #1}
+\newcommand{\itemWithName}[2]{\null {\bf #1}: #2\newline}
 % null lets the indents work after the space. Newlines allows me to have less
 % whitespace in the Latex file.
 
@@ -31,62 +39,102 @@
 \begin{document}
 \thispagestyle{empty}
 
-\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[itemize]{noitemsep, topsep=-0.2em}
 
 \begin{center}
-{\huge \bf Gillen Brown}
+{\LARGE \bf Gillen Brown (He/Him/His)}
 
-{\Large gillenbrown@gmail.com \enspace \rule[-5pt]{1pt}{20pt} \enspace \href{http://www.github.com/gillenbrown}{github.com/gillenbrown}}
-
-\bigskip
-
-\parbox[c][2em][s]{0.8\textwidth}{\center \large Future Ph.D graduate with extensive technical and analytic skills, seeking position in data science or computer science.}
-
-\medskip
+{\normalsize \href{mailto:gillenbrown@gmail.com}{gillenbrown@gmail.com} \spacer (816)589-3227 \spacer \href{http://www.linkedin.com/in/gillenbrown}{linkedin.com/in/gillenbrown}}
+%\rule[-5pt]{1pt}{20pt} \enspace \href{http://www.github.com/gillenbrown}{github.com/gillenbrown}
 
 \end{center}
 
+% Hiding the summary for now, to save space
+% \bigskip
+% Future Ph.D graduate with extensive technical and analytic skills, seeking position in data science or computer science. \todo{redo to emphasize how I've used many skills in PhD work and looking to transition}
+
+% \medskip
+
 \header{Education}
 \actionHeader{University of Michigan}{Ann Arbor, MI}
-\indentedItemDate{Ph.D. in Astronomy}{September 2016-{\it May 2022}}
-\indentedItem{{\bf Topic:} Chemical Evolution of Simulated Milky Way Sized Galaxies}
-\indentedItem{{\bf Summary:} Added funtionality to existing C codebase that models galaxy formation, then ran }
-\indentedItem{simulations on supercomputers such as NASA's Pleiades cluster to understand how different elements}
-\indentedItem{are distributed within galaxies.}
+\indentedItemDate{Ph.D. Astronomy and Astrophysics}{May 2022}
+% \indentedItem{{\bf Topic:} Chemical Evolution of Simulated Milky Way Sized Galaxies}
+% \indentedItem{{\bf Summary:} Added functionality to existing C codebase that models galaxy formation, then ran }
+% \indentedItem{simulations on supercomputers such as NASA's Pleiades cluster to understand how different elements}
+% \indentedItem{are distributed within galaxies.}
+% \indentedItem{GPA: 4.0/4.0}
+\vspace{-0.5em}
 
 \actionHeader{University of Missouri-Kansas City}{Kansas City, MO}
 \indentedItemDate{B.S. Physics with emphasis in Astronomy}{May 2016}
-\indentedItem{Math minor}
-\indentedItem{Computer Science minor}
-\indentedItem{4.0 GPA}
+\indentedItem{Minors in Mathematics and Computer Science}
+\indentedItem{GPA: 4.0/4.0  (Summa Cum Laude)}
+\vspace{-0.3em}
 
-\header{Technical Skills}
-\actionHeader{Extensive Experience}{}
-\vspace{-0.6em}
+\header{Research Experience}
+\actionHeader{University of Michigan}{Ann Arbor, MI}
+\actionHeaderSecondLine{Graduate Student Research Assistant}{September 2016 --- May 2022}
 \begin{itemize}
-    \item Python (and associated scientific computing packages such as NumPy, SciPy, Matplotlib, Jupyter)
-    \item C/C++
-    \item Unix
-    \item LaTeX
+    \item Used a Bayesian model to measure the radii of $\sim$6000 star clusters seen in Hubble Space Telescope images 
+    \item Statistically characterized the population of star cluster radii to test theories of star cluster evolution
+    % (keep if more computation focused) \item Updated existing C codebase that computationally models galaxy formation to improve the modeling of star cluster formation and evolution
+    % \item Developed a method of customizing the initial conditions for galaxy formation simulations to improve computational performance 
+    \item Developed a method to improve the computational efficiency of numerical simulations of galaxy formation
+    \item Analyzed the properties of star clusters in numerical simulations of galaxy formation
+    % \item Awarded more than 15 million CPU-hours on supercomputers including Stampede2, Anvil, and Frontera
+    \item Presented work at local seminars and large scientific conferences (audiences from 5 to 100+ people)
 \end{itemize}
 
-{\bf Some Experience} | R, HTML, CSS, git, Job Schedulers (Slurm, Torque)
-
-\header{Soft Skills}
+\actionHeader{University of Missouri-Kansas City}{Kansas City, MO}
+\actionHeaderSecondLine{Undergraduate Researcher}{June 2014 -- May 2016} 
 \begin{itemize}
-    \item {\bf Technical/Scientific Writing} | Currently an author on three scientific articles, with more upcoming.
-    \item {\bf Teaching} | Facilitated astronomy labs, designed and taught my own course, and will soon obtain a {\it Graduate Teaching Certificate} from the UM Center of Research on Learning and Teaching. 
-    \item {\bf Collaboration} | Worked with several faculty and fellow graduate students on my thesis project.
-    \item {\bf Public Speaking} | Presented my scientific work at conferences and other formal venues and more casual settings such as Ann Arbor Nerd Nite and Astronomy on Tap.
-    \item {\bf Leadership} | Took leadership role among UM-Astronomy graduate students, including representing graduate students in several departmental settings.
-    \item {\bf Critical Thinking} | Developed the ability to evaluate claims from myself and others in both qualitative and quantitative ways, including familiarity with statistical analyses
-    \item {\bf Project Management} | Developed and executed thesis project spanning multiple years. 
-    \item {\bf Problem Solving} | Discovered solutions to complex problems on the bleeding edge of scientific research on all levels of a project, from fixing technical glitches to developing creative experiments
+    \item Developed an automated method to estimate the redshift of galaxy clusters
+    % \item Created tutorials teaching basic coding and research methods to new group members
 \end{itemize}
 
-\header{Awards}
+\header{Leadership and Teamwork Experience}
+\actionHeader{Michgan Dark Skies}{Ann Arbor, MI}
+\actionHeaderSecondLine{Co-coordinator}{September 2019 --- May 2022}
 \begin{itemize}
-    \item {\bf Michigan Basketball Data Madness Challenge} --- Won a UM competition by extracting actionable insights from basketball player performance data.
+    \item Coordinated the activities of this group with 100+ members working to prevent light pollution
+    \item Worked with Ann Arbor City Council to pass a lighting ordinance decreasing light pollution within the city
 \end{itemize}
+
+\actionHeader{University of Michigan}{Ann Arbor, MI}
+\actionHeaderSecondLine{Graduate Student Instructor}{September 2017 --- April 2021}
+\begin{itemize}
+    \item Facilitated lab sections for four introductory level astronomy courses ($\sim$100 students per course)
+    % \item Assisted in developing course materials for introductory level astronomy courses 
+    \item Sole instructor for 50 student course ``Naked Eye Astronomy''
+    \item Mentored 10 other graduate student instructors 
+\end{itemize}
+
+% \actionHeader{University of Michigan}{Ann Arbor, MI}
+% \actionHeaderSecondLine{Graduate Student Representative}{September 2018 --- April 2021}
+% \begin{itemize}
+%     \item Chosen by other astronomy graduate students as our representative for several important department committees, including the curriculum committee and a committee reforming the Ph.D. qualifying exam
+% \end{itemize}
+
+\actionHeader{University of Michigan Museum of Natural History}{Ann Arbor, MI}
+\actionHeaderSecondLine{Science Communication Fellow}{May 2019 -- March 2020}
+\begin{itemize}
+    \item Created hands-on activity for children demonstrating the amounts of different elements in the Universe
+    \item Delivered multiple presentations on astronomy for museum visitors of all ages
+\end{itemize}
+
+\header{Selected Awards}
+\vspace{1.1em}
+\begin{itemize}
+    \item {\bf 2020 Michigan Institute of Data Science: Basketball Data Madness Challenge} --- Won a UM competition by extracting actionable insights from basketball player performance data
+    \item {\bf 2021 Astronomy DEI Champion} --- Awarded for helping form an antiracism reading group
+\end{itemize}
+
+
+\header{Skills}
+\vspace{0.2em}
+\itemWithName{Technical Skills, Extensive Experience}{Python (including SciPy, NumPy, etc.), C/C++, Unix, LaTeX}
+\itemWithName{Technical Skills, Some Experience}{R, HTML, CSS, git, SQL}
+\itemWithName{Data Analysis}{Statistics and probability, linear regression, Bayesian modeling, data visualization}
+\itemWithName{Soft Skills}{Technical writing, public speaking, critical thinking, problem solving}
 
 \end{document}
