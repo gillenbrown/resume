@@ -1,7 +1,10 @@
 # Random LaTeX files
 *.log
 *.aux
+*.out
 *.fdb_latexmk
 *.synctex.gz
 *.fls
+
+# VS Code
 .vscode/settings.json
