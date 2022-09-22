@@ -1,0 +1,211 @@
+\documentclass[10pt]{article}
+\parindent0pt
+
+\usepackage{mathpazo}
+\usepackage{nopageno}
+\usepackage{amsmath,amstext,color}
+% weird margins due to long MICDE grant
+\usepackage[left=0.85in,right=0.85in,top=1.0in,bottom=1.0in]{geometry}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{etaremune}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+} 
+
+\fancyhead[C]{Gillen Brown --- Long Resume}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\pagestyle{fancy}
+
+\newcommand{\header}[1]{\vspace{2em}\par \textbf{\large #1}\strut\hrule\vspace{0em}}
+%par makes it always go to the next line, strut produces slight vertical offset
+% for the rule.
+
+\newcommand{\actionHeader}[2]{\textbf{#1 \hfill #2}}
+\newcommand{\justifiedItemDate}[2]{\newline\null#1 \hfill #2}
+\newcommand{\justifiedItem}[1]{\newline\null#1}
+\newcommand{\justifiedItemDateFirst}[2]{#1 \hfill #2}
+\newcommand{\justifiedItemFirst}[1]{#1}
+\newcommand{\indentedItemDate}[2]{\newline\null\qquad #1 \hfill #2}
+\newcommand{\indentedItem}[1]{\newline\null\qquad #1}
+% null lets the indents work after the space. Newlines allows me to have less
+% whitespace in the Latex file.
+
+\title{Gillen Brown}
+
+\begin{document}
+\thispagestyle{empty}
+
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\begin{center}
+{\huge \bf Gillen Brown}
+
+\href{mailto:gillenbrown@gmail.com}{gillenbrown@gmail.com} 
+\end{center}
+\bigskip
+
+% \header{Contact Information}
+% gillenb@umich.edu
+% \newline
+% 816-589-3227
+
+% University of Michigan
+% \newline
+% Department of Astronomy
+% \newline
+% 1085 S. University
+% \newline
+% Ann Arbor, MI 48109
+
+\header{Education}
+\actionHeader{University of Michigan}{Ann Arbor, MI}
+\indentedItemDate{Ph.D. in Astronomy}{September 2016 --- May 2022}
+\indentedItem{Advisor: Oleg Y. Gnedin} 
+\indentedItem{Dissertation: Investigating the Formation of Star Clusters with Simulations and Observations}
+
+\actionHeader{University of Missouri-Kansas City (UMKC)}{Kansas City, MO}
+\indentedItemDate{B.S. Physics with emphasis in Astronomy}{May 2016}
+\indentedItem{Math and Computer Science minors}
+
+\header{Publications}
+\begin{etaremune}
+    \item \textbf{Brown, G.}, Gnedin, O. Y., ``Testing Feedback from Star Clusters in Simulations of the Milky Way Formation'', 2022, MNRAS, 514, 280 
+    \item \textbf{Brown, G.}, Gnedin, O. Y.,  ``Radii of Young Star Clusters in Nearby Galaxies'', 2021, MNRAS, 508, 5935
+    \item \textbf{Brown, G.}, Gnedin, O. Y.,  ``Improving performance of zoom-in cosmological simulations using initial conditions with customized grids'', 2021, New Astronomy, 84, 101501
+    \item \textbf{Brown, G.}, Gnedin, O. Y.,  ``Nuclear Star Clusters in Cosmological Simulations'', 2018, ApJ, 864, 94
+    \item Gonzalez, A., Gettings, D., Brodwin, M., et al.\ including \textbf{Brown, G.}, ``The Massive and Distant Clusters of WISE Survey. I:\@ Survey Overview and a Catalog of $>$2000 Galaxy Clusters at z$\simeq$1'', 2019, ApJS, 240, 33
+\end{etaremune}
+
+\header{Presentations}
+\begin{itemize}
+    \item Origins Workshop - ISM, Star and Cluster Formation, January 2022, talk: ``Radii of Young Star Clusters in Nearby Galaxies''
+    \item Santa Cruz Galaxy Workshop, August 2019, poster: ``Star Cluster Formation in Cosmological Simulations''
+    \item University of Michigan Graduate Student Lunch Talks, December 2019, talk: ``Galactic Chemical Evolution in Cosmological Simulations''
+    \item University of Michigan Graduate Student Lunch Talks, April and September 2017, talk: ``Nuclear Star Clusters in Cosmological Simulations''
+    \item UMKC Graduate Student Seminar, April 2016, talk: ``Quantifying the Effect of WISE Data on Euclid Stellar Mass Estimates''
+    \item UMKC SEARCH Symposium, April 2016, talk: ``Quantifying the Effect of WISE Data on Euclid Stellar Mass Estimates''
+    \item Mid-American Regional Astrophysics Conference, April 2016, talk: ``Quantifying the Effect of WISE Data on Euclid Stellar Mass Estimates''
+    \item UMKC SUROP Symposium, September 2015, poster: ``Quantifying the Effect of WISE Data on Euclid Stellar Mass Estimates''
+    \item Mid-American Regional Astrophysics Conference, April 2015, talk: ``An Accurate Method for Measuring Redshifts of High Redshift Galaxy Clusters''
+    \item Undergraduate Research Day at the Capitol, March 2015, poster: ``An Easy and Accurate Method for Measuring Distance to Galaxy Clusters''
+\end{itemize}
+
+
+\header{Grants and Computing Time Allocations}
+\justifiedItemDateFirst{University of Michigan --- Rackham Predoctoral Fellowship}{2021-2022}
+\justifiedItemDate{HST Cycle 29 Program AR-16614 --- ``Measuring sizes of young
+star clusters in nearby galaxies''}{2021}
+\justifiedItemDate{TACC Frontera --- 2.38 million CPU-hour allocation, Co-I (Oleg Y. Gnedin)}{2021}
+\justifiedItemDate{XSEDE Stampede2 and Anvil --- 5.7 million CPU-hour allocation, Co-I (Oleg Y. Gnedin)}{2021}
+\justifiedItemDate{XSEDE Stampede2 --- 7.44 million CPU-hour allocation, Co-I (Oleg Y. Gnedin)}{2020}
+\justifiedItemDate{Michigan Institute for Computational Disovery and Engineering --- Catalyst Grant, Co-I (Oleg Y. Gnedin)}{2020}
+
+\header{Teaching} 
+\actionHeader{University of Michigan}{}
+
+\actionHeader{GSI, Astro 201 --- Introduction to Astrophysics}{January --- April 2021}
+\indentedItem{Led discussion sections, graded work, and held office hours for introductory class for astrophysics majors}
+
+\actionHeader{Graduate Student GSI Mentor}{September 2019 --- April 2021}
+\indentedItem{Consultant and teaching mentor to other graduate student instructors in the department}
+
+\actionHeader{Instructor of Record, Astro 127 --- Naked Eye Astronomy}{May --- June 2019}
+\indentedItem{Taught the course and developed all materials, including lectures, homework, and exams}
+
+\actionHeader{GSI, Astro 102 --- Introductory Astronomy: Stars, Galaxies, and the Universe}{January --- April 2019}
+\indentedItem{Led discussion sections, graded work, and held office hours for introductory class for non-science majors}
+
+\actionHeader{GSI, Astro 107 --- The Dark Side of the Universe}{January --- April 2019}
+\indentedItem{Graded work and held office hours for introductory class for non-science majors}
+
+\actionHeader{GSI, Astro 101 --- Introductory Astronomy: The Solar System and Search for Life}{January --- December 2017}
+\indentedItem{Led discussion sections, graded work, and held office hours for introductory class for non-science majors}
+
+\actionHeader{University of Missouri --- Kansas City}{}
+
+\actionHeader{Supplemental Instruction (SI) Mentor}{August 2015 --- May 2016}
+\indentedItem{Assisted other SI leaders in developing and executing group study sessions}
+\indentedItem{Helped in developing SI Leader training}
+
+\actionHeader{Supplemental Instruction Leader}{August 2014 --- December 2015}
+\indentedItem{Led study groups for calculus-based introductory physics classes.}
+\indentedItem{Awarded \textit{SI Leader of the Term} for Spring 2015}
+
+\actionHeader{Teaching Assistant}{August 2014 --- May 2015}
+\indentedItem{Assisted in class and graded labs for introductory astronomy lab for non-science majors}
+
+
+\header{Leadership}
+\actionHeader{Michigan Dark Skies Group ---Co-Coordinator}{September 2017 --- April 2022}
+\indentedItem{Worked with Central Student Government to create a resolution urgin UM to reduce light pollution}
+\indentedItem{Met with the organizers of a development to urge them to use dark sky-friendly lighting}
+\indentedItem{Organized the activities of the group}
+\indentedItem{Presented several public talks}
+
+\actionHeader{UM Astronomy DEI Champion Award Winner}{2021}
+\indentedItem{Awarded for founding the Astronomy Antiracism Reading Group}
+
+\actionHeader{UM Astronomy Antiracism Reading Group --- Leadership Team}{June 2020 --- September 2021}
+\indentedItem{Founded this reading group and organized meetings}
+
+\actionHeader{UM Astronomy Galaxy Group Organizer}{September 2019 --- April 2021}
+\indentedItem{Coordinated and organized speakers for biweekly Galaxy Group meetings}
+
+\actionHeader{UM Astronomy Curriculum Committee --- Graduate Student Representative}{2018, 2021}
+\indentedItem{Helped manage the undergraduate and graduate astronomy curriculum}
+
+\actionHeader{Michigan Institute for Data Science --- Basketball Data Challenge --- Winner}{March 2020}
+\indentedItem{Won this team competition by extracting actionable insights from basketball player performance data}
+
+\actionHeader{UM Astronomy Prospective Student Weekend Organizer}{March 2020}
+\indentedItem{Organized this event for prospective students as it transitioned from in-person to remote.}
+
+\actionHeader{Astronomy on Tap: Ann Arbor --- Leadership Team}{September 2019 --- March 2020}
+\indentedItem{Member of leadership team, coordinated speakers and themes for monthly events}
+
+\actionHeader{University of Michigan Museum of Natural History Science Communication Fellow}{January 2019 --- March 2020}
+\indentedItem{Several professional development workshops on effectively engaging the public}
+\indentedItem{Created a hands-on demo and shared it at several Museum events}
+\indentedItem{Gave several public talks at the museum for visitors of all ages}
+
+\actionHeader{UM Astronomy Prelim Review Committee --- Graduate Student Representative}{September 2019 --- December 2020}
+\indentedItem{Representated the grad students on this committee that reshaped the qualifying exam}
+\indentedItem{Led a survey and wrote a report to summarize grad student feelings on the old and new exam formats}
+
+\actionHeader{Graduate Student Colloquium Lunch Organizer}{September 2018 --- April 2019}
+\indentedItem{Organized and ordered food for the weekly graduate student lunches with the colloquium speaker}
+
+\actionHeader{UMKC Galaxy Evolution Group Member}{August 2014 --- August 2016}
+\indentedItem{Developed a series of Python tutorials for new group members}
+
+\actionHeader{Vice President of UMKC Society of Physics Students}{August 2014 --- May 2016}
+\indentedItem{Engaged in many science outreach activities and physics demonstrations to local groups}
+\indentedItem{Organized partnerships with local under-served school districts to enrich science education}
+
+\actionHeader{UMKC SEARCH Research Grants}{2016}
+\indentedItem{Awarded 2 research grants to pursue undergraduate research at UMKC}
+
+\actionHeader{Undergraduate Research Ambassador}{August 2015 --- May 2016}
+\indentedItem{Presented at multiple events to recruit students into getting involved in undergraduate research}
+
+\actionHeader{Undergraduate Research Day at the Capitol}{April 2015}
+\indentedItem{Presented my research to representatives and aides at the Missouri State Capitol}
+
+\header{Public Talks}
+\justifiedItemDateFirst{Brighton District Library, ``Light Pollution and Michigan's Dark Skies'' }{May 2022}
+\justifiedItemDate{Warren Astronomical Society, ``Origin of the Elements''}{May 2021}
+\justifiedItemDate{Plymouth District Library, ``Light Pollution and Michigan's Dark Skies''}{February 2021}
+\justifiedItemDate{University of Michigan Museum of Natural History, ``Building the Universe''}{9 times in 2019 --- 2020}
+\justifiedItemDate{Astronomy on Tap: Ann Arbor, ``Origin of the Elements''}{October 2019}
+\justifiedItemDate{Ann Arbor Hands-On Museum, ``How the Moon Formed''}{July 2019}
+\justifiedItemDate{Ellis Library \& Reference Center, ``The Scientific Legacy of the Moon Landings''}{July 2019}
+\justifiedItemDate{Nerd Nite Ann Arbor, ``Origin of the Elements''}{March 2019}
+\justifiedItemDate{Ignite Ann Arbor, ``Reclaiming the Night Sky''}{November 2018}
+
+\end{document}
+
