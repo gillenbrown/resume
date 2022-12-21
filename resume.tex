@@ -22,11 +22,11 @@
 % \newcommand{\spacer}{\enspace \rule[-4pt]{1pt}{15pt} \enspace}
 \newcommand{\spacer}{$\bullet$ \ }
 
-\newcommand{\header}[1]{\vspace{1.0em}\par \textbf{\large #1}\strut\hrule\vspace{-0.9em}}
+\newcommand{\header}[1]{\vspace{1.0em}\par \textbf{\large #1}\strut\hrule\vspace{-1.2em}}
 %par makes it always go to the next line, strut produces slight vertical offset
 % for the rule.
 
-\newcommand{\actionHeader}[2]{\vspace{0.6em}\textbf{#1} \hfill #2}
+\newcommand{\actionHeader}[2]{\vspace{1em}\textbf{#1} \hfill #2}
 \newcommand{\actionHeaderSecondLine}[2]{\newline \textit{#1} \hfill #2}
 \newcommand{\indentedItemDate}[2]{\newline\null\qquad #1 \hfill #2}
 \newcommand{\indentedItem}[1]{\newline\null\qquad #1}
@@ -48,7 +48,7 @@
 \end{center}
 
 \bigskip
-Astrophysics Ph.D. graduate with strong programming, data analysis, and communication skills seeking a position in data science. I bring a unique skillset and the ability to learn new methods to solve difficult problems.
+Astrophysics Ph.D. graduate with strong programming, data analysis, and communication skills looking to perform rigorous analysis and provide data-driven insights that make a difference in the broader world
 
 % \vspace{-0.5em}
 \header{Education}
@@ -73,40 +73,41 @@ Astrophysics Ph.D. graduate with strong programming, data analysis, and communic
 \begin{itemize}
     \item Performed astrophysics research resulting in four peer-reviewed publications
     \item Used Python to analyze astrophysical data of several kinds, including tables, images, and volumetric data
-    \item Created a Bayesian model to measure the radii of $\sim$6000 star clusters seen in Hubble Space Telescope images 
-    \item Statistically characterized the population of star cluster radii to test theories of star cluster evolution
+    \item Created a Bayesian model to measure the radii of star clusters seen in Hubble Space Telescope images
+    \item Successfully measured the radii of over 6,000 star clusters, more than all previous studies combined
+    \item Performed some exploratory analysis of these radii with the goal of understanding how star clusters form and evolve, finding that more massive clusters form with larger radii and expand slightly with time
     % (keep if more computation focused) \item Updated existing C codebase that computationally models galaxy formation to improve the modeling of star cluster formation and evolution
-    % \item Developed a method of customizing the initial conditions for galaxy formation simulations to improve computational performance 
-    \item Developed a method to improve the computational efficiency of numerical simulations of galaxy formation
-    \item Analyzed the properties of star clusters in numerical simulations of galaxy formation
-    % \item Awarded more than 15 million CPU-hours on supercomputers including Stampede2, Anvil, and Frontera
-    \item Presented work at local seminars and large scientific conferences (audiences from 5 to 100+ people)
+    % \item Developed a method to improve the computational efficiency of numerical simulations of galaxy formation
+    \item Ran numerical hydrodynamical simulations of galaxy formation on the Stampede2 supercomputer
+    \item Developed a automated Python pipeline to extract relevant galaxy properties from these simulations
+    \item Won grants totaling more than 15 million CPU-hours on the Stampede2, Anvil, and Frontera supercomputers
+    \item Presented work at local seminars, scientific conferences, and to the public (audiences from 5 to 100+ people)
 \end{itemize}
 
-\actionHeader{University of Missouri-Kansas City}{Kansas City, MO}
-\actionHeaderSecondLine{Undergraduate Researcher}{June 2014 -- August 2016} 
-\begin{itemize}
-    \item Used Python to analyze astrophysical images and tabular data
-    \item Developed an automated method to estimate the redshift of galaxy clusters
-    % \item Created tutorials teaching basic coding and research methods to new group members
-\end{itemize}
+% \actionHeader{University of Missouri-Kansas City}{Kansas City, MO}
+% \actionHeaderSecondLine{Undergraduate Researcher}{June 2014 -- August 2016} 
+% \begin{itemize}
+%     \item Used Python to analyze astrophysical images and tabular data
+%     \item Developed an automated method to estimate the redshift of galaxy clusters
+%     % \item Created tutorials teaching basic coding and research methods to new group members
+% \end{itemize}
 
 \header{Leadership and Teamwork Experience}
 \actionHeader{Michgan Dark Skies}{Ann Arbor, MI}
 \actionHeaderSecondLine{Co-coordinator}{September 2019 --- April 2022}
 \begin{itemize}
-    \item Coordinated the activities of this group with 100+ members working to prevent light pollution
-    \item Worked with Central Student Government to pass a resolution encouraging U of M to reduce light pollution
+    \item Helped coordinate the activities of this group with 100+ members working to prevent light pollution
+    \item Worked with the University of Michigan Central Student Government to pass a resolution encouraging the University to reduce its light pollution
 \end{itemize}
 
-% \actionHeader{University of Michigan}{Ann Arbor, MI}
-% \actionHeaderSecondLine{Graduate Student Instructor}{September 2017 --- April 2021}
-% \begin{itemize}
-%     \item Facilitated lab sections for four introductory level astronomy courses ($\sim$100 students per course)
-%     % \item Assisted in developing course materials for introductory level astronomy courses 
-%     \item Sole instructor for 50 student course ``Naked Eye Astronomy''
-%     \item Mentored 10 other graduate student instructors 
-% \end{itemize}
+\actionHeader{University of Michigan}{Ann Arbor, MI}
+\actionHeaderSecondLine{Graduate Student Instructor}{September 2017 --- April 2021}
+\begin{itemize}
+    \item Facilitated lab sections for four introductory level astronomy courses ($\sim$100 students per course)
+    % \item Assisted in developing course materials for introductory level astronomy courses 
+    \item Sole instructor for 50 student course ``Naked Eye Astronomy''
+    \item Mentored 10 other graduate student instructors 
+\end{itemize}
 
 % \actionHeader{University of Michigan}{Ann Arbor, MI}
 % \actionHeaderSecondLine{Graduate Student Representative}{September 2018 --- April 2021}
@@ -121,16 +122,16 @@ Astrophysics Ph.D. graduate with strong programming, data analysis, and communic
     \item Delivered multiple presentations on astronomy for museum visitors of all ages
 \end{itemize}
 
-\header{Selected Awards}
-\vspace{1.1em}
-\begin{itemize}
-    \item {\bf 2020 Michigan Institute of Data Science: Basketball Data Madness Challenge} --- Won a UM competition by extracting actionable insights from basketball player performance data
-    \item {\bf 2021 Astronomy DEI Champion} --- Awarded for helping form an antiracism reading group
-\end{itemize}
+% \header{Selected Awards}
+% \vspace{1.1em}
+% \begin{itemize}
+%     \item {\bf 2020 Michigan Institute of Data Science: Basketball Data Madness Challenge} --- Won a UM competition by extracting actionable insights from basketball player performance data
+%     \item {\bf 2021 Astronomy DEI Champion} --- Awarded for helping form an antiracism reading group
+% \end{itemize}
 
 
 \header{Skills}
-\vspace{0.2em}
+\vspace{0.5em}
 \itemWithName{Technical Skills}{Python (including SciPy, NumPy, Matplotlib, etc.), C/C++, Unix, LaTeX, git}
 \itemWithName{Data Analysis}{Statistics and probability, linear regression, Bayesian modeling, data visualization}
 \itemWithName{Soft Skills}{Technical writing, public speaking, critical thinking, problem solving}
