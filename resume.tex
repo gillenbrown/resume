@@ -22,11 +22,11 @@
 % \newcommand{\spacer}{\enspace \rule[-4pt]{1pt}{15pt} \enspace}
 \newcommand{\spacer}{$\bullet$ \ }
 
-\newcommand{\header}[1]{\vspace{1.0em}\par \textbf{\large #1}\strut\hrule\vspace{-0.9em}}
+\newcommand{\header}[1]{\vspace{0.7em}\par \textbf{\large #1}\strut\hrule\vspace{-0.6em}}
 %par makes it always go to the next line, strut produces slight vertical offset
 % for the rule.
 
-\newcommand{\actionHeader}[2]{\vspace{0.6em}\textbf{#1} \hfill #2}
+\newcommand{\actionHeader}[2]{\vspace{0.3em}\textbf{#1} \hfill #2}
 \newcommand{\actionHeaderSecondLine}[2]{\newline \textit{#1} \hfill #2}
 \newcommand{\indentedItemDate}[2]{\newline\null\qquad #1 \hfill #2}
 \newcommand{\indentedItem}[1]{\newline\null\qquad #1}
@@ -47,7 +47,7 @@
 {\normalsize \href{mailto:gillenbrown@gmail.com}{gillenbrown@gmail.com} \spacer \href{https://www.gillenbrown.com}{gillenbrown.com} \spacer \href{http://www.linkedin.com/in/gillenbrown}{linkedin.com/in/gillenbrown}}
 \end{center}
 
-\bigskip
+\medskip
 Astrophysics Ph.D. graduate with strong programming, data analysis, and communication skills seeking a position in data science. I bring a broad skillset and the ability to quickly learn new methods to solve difficult problems.
 
 % \vspace{-0.5em}
@@ -65,7 +65,10 @@ Astrophysics Ph.D. graduate with strong programming, data analysis, and communic
 \indentedItemDate{B.S. Physics with emphasis in Astronomy}{May 2016}
 \indentedItem{Minors in Mathematics and Computer Science}
 \indentedItem{GPA: 4.0/4.0  (Summa Cum Laude)}
-\vspace{-0.3em}
+\indentedItem{{\spaceskip  0.45em  {\bf Relevant Coursework}: Calculus (I, II, III), Linear Algebra, Mathematical Statistics (I, II), Introduction to}} 
+\indentedItem{\qquad Statistical Learning, Machine Learning for Data Scientists}
+\vspace{-0.3em}  
+% ugly hack, but I didn't want to define a new command to make the multi-line item work well. The spaceskip thing makes that text fill the whole line
 
 \header{Experience}
 \actionHeader{University of Michigan}{Ann Arbor, MI}
@@ -168,7 +171,7 @@ Astrophysics Ph.D. graduate with strong programming, data analysis, and communic
 
 \header{Skills}
 \vspace{0.2em}
-\itemWithName{Technical Skills}{Python (including SciPy, NumPy, Matplotlib, etc.), SQL, C/C++, Unix, LaTeX, git}
+\itemWithName{Technical Skills}{Python (including SciPy, NumPy, Matplotlib, Jupyter, etc.), SQL, C/C++, Unix, LaTeX, git}
 \itemWithName{Data Analysis}{Statistics and probability, linear regression, Bayesian modeling, data visualization}
 \itemWithName{Soft Skills}{Technical writing, public speaking, critical thinking, problem solving}
 
